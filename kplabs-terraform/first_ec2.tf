@@ -4,6 +4,6 @@ provider "aws" {
   #secret_key = "my-secret-key"
 }
 
-resource "" "name" {
+resource "aws_instance" "name" {
   
 }
