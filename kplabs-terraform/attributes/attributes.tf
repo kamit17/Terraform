@@ -16,5 +16,17 @@ provider "aws" {
 resource "aws_instance" "test" {
     instance_type = "t2.micro"
     ami = "ami-0cfde0ea8edd312d4"
+
+  tags = {
+    Name ="Ec2"
+  }
+
+
+    lifecycle {
+      
+      ignore_changes = all
+      #ignore_changes = [tags]
+      create_before_destroy = true
+    }
   
 }
