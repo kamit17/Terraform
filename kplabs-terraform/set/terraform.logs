@@ -1,0 +1,1920 @@
+2025-10-04T21:25:28.297-0500 [INFO]  Terraform version: 1.12.2
+2025-10-04T21:25:28.297-0500 [DEBUG] using github.com/hashicorp/go-tfe v1.74.1
+2025-10-04T21:25:28.297-0500 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.1-0.20250203194505-ba0759438da2
+2025-10-04T21:25:28.297-0500 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-10-04T21:25:28.297-0500 [DEBUG] using github.com/zclconf/go-cty v1.16.2
+2025-10-04T21:25:28.297-0500 [INFO]  Go runtime version: go1.24.2
+2025-10-04T21:25:28.297-0500 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-10-04T21:25:28.297-0500 [TRACE] Stdout is a terminal of width 64
+2025-10-04T21:25:28.297-0500 [TRACE] Stderr is a terminal of width 64
+2025-10-04T21:25:28.297-0500 [TRACE] Stdin is a terminal
+2025-10-04T21:25:28.297-0500 [DEBUG] Attempting to open CLI config file: /home/docadmin/.terraformrc
+2025-10-04T21:25:28.298-0500 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-10-04T21:25:28.299-0500 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-10-04T21:25:28.299-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.terraform.d/plugins
+2025-10-04T21:25:28.299-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/terraform/plugins
+2025-10-04T21:25:28.299-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/flatpak/exports/share/terraform/plugins
+2025-10-04T21:25:28.299-0500 [DEBUG] ignoring non-existing provider search directory /var/lib/flatpak/exports/share/terraform/plugins
+2025-10-04T21:25:28.299-0500 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2025-10-04T21:25:28.299-0500 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2025-10-04T21:25:28.299-0500 [INFO]  CLI command args: []string{"plan"}
+2025-10-04T21:25:28.300-0500 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2025-10-04T21:25:28.300-0500 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2025-10-04T21:25:28.300-0500 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2025-10-04T21:25:28.300-0500 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2025-10-04T21:25:28.300-0500 [DEBUG] checking for provisioner in "."
+2025-10-04T21:25:28.341-0500 [DEBUG] checking for provisioner in "/usr/bin"
+2025-10-04T21:25:28.341-0500 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2025-10-04T21:25:28.342-0500 [INFO]  backend/local: starting Plan operation
+2025-10-04T21:25:28.342-0500 [TRACE] backend/local: requesting state manager for workspace "default"
+2025-10-04T21:25:28.342-0500 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2025-10-04T21:25:28.342-0500 [TRACE] backend/local: requesting state lock for workspace "default"
+2025-10-04T21:25:28.342-0500 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2025-10-04T21:25:28.342-0500 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2025-10-04T21:25:28.342-0500 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2025-10-04T21:25:28.342-0500 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2025-10-04T21:25:28.342-0500 [TRACE] backend/local: reading remote state for workspace "default"
+2025-10-04T21:25:28.342-0500 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2025-10-04T21:25:28.342-0500 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2025-10-04T21:25:28.342-0500 [TRACE] statemgr.Filesystem: read nil snapshot
+2025-10-04T21:25:28.342-0500 [TRACE] backend/local: populating backendrun.LocalRun for current working directory
+2025-10-04T21:25:28.343-0500 [DEBUG] backend/local: will prompt for input of unset required variables [my-list]
+2025-10-04T21:25:28.343-0500 [DEBUG] command: asking for input: "var.my-list"
+2025-10-04T21:25:40.098-0500 [TRACE] terraform.NewContext: starting
+2025-10-04T21:25:40.098-0500 [TRACE] terraform.NewContext: complete
+2025-10-04T21:25:40.098-0500 [TRACE] backend/local: requesting interactive input, if necessary
+2025-10-04T21:25:40.098-0500 [TRACE] Context.Input: Prompting for provider arguments
+2025-10-04T21:25:40.098-0500 [TRACE] backend/local: running validation operation
+2025-10-04T21:25:40.098-0500 [DEBUG] Building and walking validate graph
+2025-10-04T21:25:40.098-0500 [TRACE] building graph for walkValidate
+2025-10-04T21:25:40.098-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:25:40.098-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:25:40.098-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:25:40.098-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:25:40.098-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:25:40.098-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:25:40.098-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:25:40.098-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:25:40.098-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:25:40.098-0500 [TRACE] variableValidationTransformer: var.my-list has no validation rules
+2025-10-04T21:25:40.098-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:25:40.098-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.StateTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] StateTransformer: pointless no-op call, creating no nodes at all
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:25:40.099-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:25:40.099-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:25:40.099-0500 [DEBUG] ReferenceTransformer: "var.my-list" references: []
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  root - *terraform.nodeCloseModule
+    var.my-list - *terraform.NodeRootVariable
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:25:40.099-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:25:40.099-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:25:40.099-0500 [DEBUG] Starting graph walk: walkValidate
+2025-10-04T21:25:40.099-0500 [TRACE] vertex "var.my-list": starting visit (*terraform.NodeRootVariable)
+2025-10-04T21:25:40.100-0500 [TRACE] vertex "var.my-list": belongs to
+2025-10-04T21:25:40.100-0500 [TRACE] NodeRootVariable: evaluating var.my-list
+2025-10-04T21:25:40.100-0500 [TRACE] prepareFinalInputVariableValue: preparing var.my-list
+2025-10-04T21:25:40.100-0500 [TRACE] vertex "var.my-list": visit complete
+2025-10-04T21:25:40.100-0500 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2025-10-04T21:25:40.100-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:25:40.100-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:25:40.100-0500 [INFO]  backend/local: plan calling Plan
+2025-10-04T21:25:40.100-0500 [DEBUG] Building and walking plan graph for NormalMode
+2025-10-04T21:25:40.100-0500 [TRACE] building graph for walkPlan
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:25:40.100-0500 [TRACE] variableValidationTransformer: var.my-list has no validation rules
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.StateTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:25:40.100-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:25:40.100-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:25:40.100-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:25:40.100-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:25:40.101-0500 [DEBUG] ReferenceTransformer: "var.my-list" references: []
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  root - *terraform.nodeCloseModule
+    var.my-list - *terraform.NodeRootVariable
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:25:40.101-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:25:40.101-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:25:40.101-0500 [DEBUG] Starting graph walk: walkPlan
+2025-10-04T21:25:40.101-0500 [TRACE] vertex "var.my-list": starting visit (*terraform.NodeRootVariable)
+2025-10-04T21:25:40.101-0500 [TRACE] vertex "var.my-list": belongs to
+2025-10-04T21:25:40.101-0500 [TRACE] NodeRootVariable: evaluating var.my-list
+2025-10-04T21:25:40.101-0500 [TRACE] prepareFinalInputVariableValue: preparing var.my-list
+2025-10-04T21:25:40.101-0500 [TRACE] vertex "var.my-list": visit complete
+2025-10-04T21:25:40.101-0500 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2025-10-04T21:25:40.101-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:25:40.101-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:25:40.101-0500 [TRACE] Plan is complete
+2025-10-04T21:25:40.101-0500 [TRACE] Plan is not applyable
+2025-10-04T21:25:40.101-0500 [DEBUG] no planned changes, skipping apply graph check
+2025-10-04T21:25:40.101-0500 [INFO]  backend/local: plan operation completed
+2025-10-04T21:25:40.101-0500 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2025-10-04T21:25:40.102-0500 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2025-10-04T21:26:19.118-0500 [INFO]  Terraform version: 1.12.2
+2025-10-04T21:26:19.118-0500 [DEBUG] using github.com/hashicorp/go-tfe v1.74.1
+2025-10-04T21:26:19.118-0500 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.1-0.20250203194505-ba0759438da2
+2025-10-04T21:26:19.118-0500 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-10-04T21:26:19.118-0500 [DEBUG] using github.com/zclconf/go-cty v1.16.2
+2025-10-04T21:26:19.118-0500 [INFO]  Go runtime version: go1.24.2
+2025-10-04T21:26:19.118-0500 [INFO]  CLI args: []string{"terraform", "apply", "-auto-approve"}
+2025-10-04T21:26:19.118-0500 [TRACE] Stdout is a terminal of width 64
+2025-10-04T21:26:19.118-0500 [TRACE] Stderr is a terminal of width 64
+2025-10-04T21:26:19.118-0500 [TRACE] Stdin is a terminal
+2025-10-04T21:26:19.118-0500 [DEBUG] Attempting to open CLI config file: /home/docadmin/.terraformrc
+2025-10-04T21:26:19.118-0500 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-10-04T21:26:19.118-0500 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-10-04T21:26:19.118-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.terraform.d/plugins
+2025-10-04T21:26:19.118-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/terraform/plugins
+2025-10-04T21:26:19.118-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/flatpak/exports/share/terraform/plugins
+2025-10-04T21:26:19.118-0500 [DEBUG] ignoring non-existing provider search directory /var/lib/flatpak/exports/share/terraform/plugins
+2025-10-04T21:26:19.118-0500 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2025-10-04T21:26:19.119-0500 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2025-10-04T21:26:19.119-0500 [INFO]  CLI command args: []string{"apply", "-auto-approve"}
+2025-10-04T21:26:19.119-0500 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2025-10-04T21:26:19.120-0500 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2025-10-04T21:26:19.120-0500 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2025-10-04T21:26:19.120-0500 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2025-10-04T21:26:19.120-0500 [DEBUG] checking for provisioner in "."
+2025-10-04T21:26:19.123-0500 [DEBUG] checking for provisioner in "/usr/bin"
+2025-10-04T21:26:19.123-0500 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2025-10-04T21:26:19.124-0500 [INFO]  backend/local: starting Apply operation
+2025-10-04T21:26:19.124-0500 [TRACE] backend/local: requesting state manager for workspace "default"
+2025-10-04T21:26:19.124-0500 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2025-10-04T21:26:19.124-0500 [TRACE] backend/local: requesting state lock for workspace "default"
+2025-10-04T21:26:19.124-0500 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2025-10-04T21:26:19.124-0500 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2025-10-04T21:26:19.124-0500 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2025-10-04T21:26:19.124-0500 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2025-10-04T21:26:19.124-0500 [TRACE] backend/local: reading remote state for workspace "default"
+2025-10-04T21:26:19.124-0500 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2025-10-04T21:26:19.124-0500 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2025-10-04T21:26:19.124-0500 [TRACE] statemgr.Filesystem: read nil snapshot
+2025-10-04T21:26:19.124-0500 [TRACE] backend/local: populating backendrun.LocalRun for current working directory
+2025-10-04T21:26:19.125-0500 [DEBUG] backend/local: will prompt for input of unset required variables [my-list]
+2025-10-04T21:26:19.125-0500 [DEBUG] command: asking for input: "var.my-list"
+2025-10-04T21:26:34.001-0500 [TRACE] terraform.NewContext: starting
+2025-10-04T21:26:34.001-0500 [TRACE] terraform.NewContext: complete
+2025-10-04T21:26:34.001-0500 [TRACE] backend/local: requesting interactive input, if necessary
+2025-10-04T21:26:34.001-0500 [TRACE] Context.Input: Prompting for provider arguments
+2025-10-04T21:26:34.001-0500 [TRACE] backend/local: running validation operation
+2025-10-04T21:26:34.001-0500 [DEBUG] Building and walking validate graph
+2025-10-04T21:26:34.001-0500 [TRACE] building graph for walkValidate
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:26:34.001-0500 [TRACE] variableValidationTransformer: var.my-list has no validation rules
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] OutputTransformer: adding mylist as *terraform.nodeExpandOutput
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.StateTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] StateTransformer: pointless no-op call, creating no nodes at all
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:26:34.001-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:26:34.001-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:26:34.001-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.002-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:26:34.002-0500 [DEBUG] ReferenceTransformer: "var.my-list" references: []
+2025-10-04T21:26:34.002-0500 [DEBUG] ReferenceTransformer: "output.mylist (expand)" references: [var.my-list]
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+    var.my-list - *terraform.NodeRootVariable
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] AttachDependenciesTransformer: output.mylist (expand) depends on []
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+    var.my-list - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.002-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:26:34.002-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:26:34.002-0500 [DEBUG] Starting graph walk: walkValidate
+2025-10-04T21:26:34.002-0500 [TRACE] vertex "var.my-list": starting visit (*terraform.NodeRootVariable)
+2025-10-04T21:26:34.002-0500 [TRACE] vertex "var.my-list": belongs to
+2025-10-04T21:26:34.002-0500 [TRACE] NodeRootVariable: evaluating var.my-list
+2025-10-04T21:26:34.002-0500 [TRACE] prepareFinalInputVariableValue: preparing var.my-list
+2025-10-04T21:26:34.002-0500 [TRACE] vertex "var.my-list": visit complete
+2025-10-04T21:26:34.002-0500 [TRACE] vertex "output.mylist (expand)": starting visit (*terraform.nodeExpandOutput)
+2025-10-04T21:26:34.002-0500 [TRACE] vertex "output.mylist (expand)": does not belong to any module instance
+2025-10-04T21:26:34.002-0500 [TRACE] vertex "output.mylist (expand)": expanding dynamic subgraph
+2025-10-04T21:26:34.002-0500 [TRACE] Expanding output: adding output.mylist as *terraform.NodeApplyableOutput
+2025-10-04T21:26:34.002-0500 [TRACE] vertex "output.mylist (expand)": entering dynamic subgraph
+2025-10-04T21:26:34.002-0500 [TRACE] vertex "output.mylist": starting visit (*terraform.NodeApplyableOutput)
+2025-10-04T21:26:34.002-0500 [TRACE] vertex "output.mylist": belongs to
+2025-10-04T21:26:34.003-0500 [TRACE] setValue: Saving Create change for output.mylist in changeset
+2025-10-04T21:26:34.003-0500 [TRACE] setValue: Saving value for output.mylist in state
+2025-10-04T21:26:34.003-0500 [TRACE] vertex "output.mylist": visit complete
+2025-10-04T21:26:34.003-0500 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2025-10-04T21:26:34.003-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:26:34.003-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:26:34.003-0500 [TRACE] vertex "output.mylist (expand)": dynamic subgraph completed successfully
+2025-10-04T21:26:34.003-0500 [TRACE] vertex "output.mylist (expand)": visit complete
+2025-10-04T21:26:34.003-0500 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2025-10-04T21:26:34.003-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:26:34.003-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:26:34.003-0500 [INFO]  backend/local: apply calling Plan
+2025-10-04T21:26:34.003-0500 [DEBUG] Building and walking plan graph for NormalMode
+2025-10-04T21:26:34.003-0500 [TRACE] building graph for walkPlan
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:26:34.003-0500 [TRACE] variableValidationTransformer: var.my-list has no validation rules
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] OutputTransformer: adding mylist as *terraform.nodeExpandOutput
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.StateTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:26:34.003-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.003-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:26:34.003-0500 [DEBUG] ReferenceTransformer: "var.my-list" references: []
+2025-10-04T21:26:34.003-0500 [DEBUG] ReferenceTransformer: "output.mylist (expand)" references: [var.my-list]
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+    var.my-list - *terraform.NodeRootVariable
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] AttachDependenciesTransformer: output.mylist (expand) depends on []
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+    var.my-list - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.003-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:26:34.003-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:26:34.003-0500 [DEBUG] Starting graph walk: walkPlan
+2025-10-04T21:26:34.003-0500 [TRACE] vertex "var.my-list": starting visit (*terraform.NodeRootVariable)
+2025-10-04T21:26:34.003-0500 [TRACE] vertex "var.my-list": belongs to
+2025-10-04T21:26:34.003-0500 [TRACE] NodeRootVariable: evaluating var.my-list
+2025-10-04T21:26:34.003-0500 [TRACE] prepareFinalInputVariableValue: preparing var.my-list
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "var.my-list": visit complete
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "output.mylist (expand)": starting visit (*terraform.nodeExpandOutput)
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "output.mylist (expand)": does not belong to any module instance
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "output.mylist (expand)": expanding dynamic subgraph
+2025-10-04T21:26:34.004-0500 [TRACE] Expanding output: adding output.mylist as *terraform.NodeApplyableOutput
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "output.mylist (expand)": entering dynamic subgraph
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "output.mylist": starting visit (*terraform.NodeApplyableOutput)
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "output.mylist": belongs to
+2025-10-04T21:26:34.004-0500 [TRACE] setValue: Saving Create change for output.mylist in changeset
+2025-10-04T21:26:34.004-0500 [TRACE] setValue: Saving value for output.mylist in state
+2025-10-04T21:26:34.004-0500 [TRACE] setValue: Saving value for output.mylist in state
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "output.mylist": visit complete
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "output.mylist (expand)": dynamic subgraph completed successfully
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "output.mylist (expand)": visit complete
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:26:34.004-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:26:34.004-0500 [TRACE] Plan is complete
+2025-10-04T21:26:34.004-0500 [TRACE] Plan is applyable
+2025-10-04T21:26:34.004-0500 [DEBUG] building apply graph to check for errors
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:26:34.004-0500 [TRACE] variableValidationTransformer: var.my-list has no validation rules
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] OutputTransformer: adding mylist as *terraform.nodeExpandOutput
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.DiffTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.DiffTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.DeferredTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.DeferredTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:26:34.004-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.004-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:26:34.004-0500 [DEBUG] ReferenceTransformer: "var.my-list" references: []
+2025-10-04T21:26:34.004-0500 [DEBUG] ReferenceTransformer: "output.mylist (expand)" references: [var.my-list]
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+    var.my-list - *terraform.NodeRootVariable
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] AttachDependenciesTransformer: output.mylist (expand) depends on []
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.checkStartTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.checkStartTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.CBDEdgeTransformer
+2025-10-04T21:26:34.004-0500 [TRACE] Completed graph transform *terraform.CBDEdgeTransformer (no changes)
+2025-10-04T21:26:34.004-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+    var.my-list - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [INFO]  backend/local: apply calling Apply
+2025-10-04T21:26:34.005-0500 [DEBUG] Building and walking apply graph for NormalMode plan
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:26:34.005-0500 [TRACE] variableValidationTransformer: var.my-list has no validation rules
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] OutputTransformer: adding mylist as *terraform.nodeExpandOutput
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.DiffTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.DiffTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.DeferredTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.DeferredTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:26:34.005-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.005-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:26:34.005-0500 [DEBUG] ReferenceTransformer: "var.my-list" references: []
+2025-10-04T21:26:34.005-0500 [DEBUG] ReferenceTransformer: "output.mylist (expand)" references: [var.my-list]
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+    var.my-list - *terraform.NodeRootVariable
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] AttachDependenciesTransformer: output.mylist (expand) depends on []
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.checkStartTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.checkStartTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.CBDEdgeTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.CBDEdgeTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:26:34.005-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:26:34.005-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:26:34.006-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:26:34.006-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:26:34.006-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:26:34.006-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:26:34.006-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:26:34.006-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:26:34.006-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+    var.my-list - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-list - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:26:34.006-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:26:34.006-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:26:34.006-0500 [DEBUG] Starting graph walk: walkApply
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "var.my-list": starting visit (*terraform.NodeRootVariable)
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "var.my-list": belongs to
+2025-10-04T21:26:34.006-0500 [TRACE] NodeRootVariable: evaluating var.my-list
+2025-10-04T21:26:34.006-0500 [TRACE] prepareFinalInputVariableValue: preparing var.my-list
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "var.my-list": visit complete
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "output.mylist (expand)": starting visit (*terraform.nodeExpandOutput)
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "output.mylist (expand)": does not belong to any module instance
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "output.mylist (expand)": expanding dynamic subgraph
+2025-10-04T21:26:34.006-0500 [TRACE] Expanding output: adding output.mylist as *terraform.NodeApplyableOutput
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "output.mylist (expand)": entering dynamic subgraph
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "output.mylist": starting visit (*terraform.NodeApplyableOutput)
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "output.mylist": belongs to
+2025-10-04T21:26:34.006-0500 [TRACE] setValue: Saving value for output.mylist in state
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "output.mylist": visit complete
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "output.mylist (expand)": dynamic subgraph completed successfully
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "output.mylist (expand)": visit complete
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:26:34.006-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:26:34.006-0500 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2025-10-04T21:26:34.006-0500 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2025-10-04T21:26:34.006-0500 [TRACE] statemgr.Filesystem: read nil snapshot
+2025-10-04T21:26:34.006-0500 [TRACE] statemgr.Filesystem: no original state snapshot to back up
+2025-10-04T21:26:34.006-0500 [TRACE] statemgr.Filesystem: state has changed since last snapshot, so incrementing serial to 1
+2025-10-04T21:26:34.006-0500 [TRACE] statemgr.Filesystem: writing snapshot at terraform.tfstate
+2025-10-04T21:26:34.012-0500 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2025-10-04T21:26:34.013-0500 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2025-10-04T21:27:27.570-0500 [INFO]  Terraform version: 1.12.2
+2025-10-04T21:27:27.570-0500 [DEBUG] using github.com/hashicorp/go-tfe v1.74.1
+2025-10-04T21:27:27.570-0500 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.1-0.20250203194505-ba0759438da2
+2025-10-04T21:27:27.570-0500 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-10-04T21:27:27.570-0500 [DEBUG] using github.com/zclconf/go-cty v1.16.2
+2025-10-04T21:27:27.570-0500 [INFO]  Go runtime version: go1.24.2
+2025-10-04T21:27:27.570-0500 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-10-04T21:27:27.570-0500 [TRACE] Stdout is a terminal of width 64
+2025-10-04T21:27:27.570-0500 [TRACE] Stderr is a terminal of width 64
+2025-10-04T21:27:27.570-0500 [TRACE] Stdin is a terminal
+2025-10-04T21:27:27.570-0500 [DEBUG] Attempting to open CLI config file: /home/docadmin/.terraformrc
+2025-10-04T21:27:27.570-0500 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-10-04T21:27:27.570-0500 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-10-04T21:27:27.570-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.terraform.d/plugins
+2025-10-04T21:27:27.570-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/terraform/plugins
+2025-10-04T21:27:27.570-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/flatpak/exports/share/terraform/plugins
+2025-10-04T21:27:27.570-0500 [DEBUG] ignoring non-existing provider search directory /var/lib/flatpak/exports/share/terraform/plugins
+2025-10-04T21:27:27.571-0500 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2025-10-04T21:27:27.571-0500 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2025-10-04T21:27:27.571-0500 [INFO]  CLI command args: []string{"plan"}
+2025-10-04T21:27:27.572-0500 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2025-10-04T21:27:27.572-0500 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2025-10-04T21:27:27.572-0500 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2025-10-04T21:27:27.572-0500 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2025-10-04T21:27:27.573-0500 [DEBUG] checking for provisioner in "."
+2025-10-04T21:27:27.592-0500 [DEBUG] checking for provisioner in "/usr/bin"
+2025-10-04T21:27:27.592-0500 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2025-10-04T21:27:27.592-0500 [INFO]  backend/local: starting Plan operation
+2025-10-04T21:27:27.592-0500 [TRACE] backend/local: requesting state manager for workspace "default"
+2025-10-04T21:27:27.592-0500 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2025-10-04T21:27:27.592-0500 [TRACE] backend/local: requesting state lock for workspace "default"
+2025-10-04T21:27:27.593-0500 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2025-10-04T21:27:27.594-0500 [TRACE] statemgr.Filesystem: existing snapshot has lineage "14303325-0ea0-e64e-652f-1531b3044f7a" serial 1
+2025-10-04T21:27:27.594-0500 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2025-10-04T21:27:27.594-0500 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2025-10-04T21:27:27.594-0500 [TRACE] backend/local: reading remote state for workspace "default"
+2025-10-04T21:27:27.594-0500 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2025-10-04T21:27:27.594-0500 [TRACE] statemgr.Filesystem: read snapshot with lineage "14303325-0ea0-e64e-652f-1531b3044f7a" serial 1
+2025-10-04T21:27:27.594-0500 [TRACE] backend/local: populating backendrun.LocalRun for current working directory
+2025-10-04T21:27:27.595-0500 [DEBUG] backend/local: will prompt for input of unset required variables [my-set]
+2025-10-04T21:27:27.595-0500 [DEBUG] command: asking for input: "var.my-set"
+2025-10-04T21:27:43.442-0500 [TRACE] terraform.NewContext: starting
+2025-10-04T21:27:43.442-0500 [TRACE] terraform.NewContext: complete
+2025-10-04T21:27:43.442-0500 [TRACE] backend/local: requesting interactive input, if necessary
+2025-10-04T21:27:43.442-0500 [TRACE] Context.Input: Prompting for provider arguments
+2025-10-04T21:27:43.442-0500 [TRACE] backend/local: running validation operation
+2025-10-04T21:27:43.442-0500 [DEBUG] Building and walking validate graph
+2025-10-04T21:27:43.442-0500 [TRACE] building graph for walkValidate
+2025-10-04T21:27:43.442-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:27:43.442-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:27:43.442-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:27:43.442-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:27:43.442-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:27:43.442-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:27:43.442-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:27:43.442-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:27:43.442-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:27:43.442-0500 [TRACE] variableValidationTransformer: var.my-set has no validation rules
+2025-10-04T21:27:43.442-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:27:43.442-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:27:43.442-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:27:43.442-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:27:43.442-0500 [TRACE] OutputTransformer: adding mylist as *terraform.nodeExpandOutput
+2025-10-04T21:27:43.442-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:27:43.442-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:27:43.442-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:27:43.442-0500 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2025-10-04T21:27:43.442-0500 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2025-10-04T21:27:43.442-0500 [TRACE] Executing graph transform *terraform.StateTransformer
+2025-10-04T21:27:43.442-0500 [TRACE] StateTransformer: pointless no-op call, creating no nodes at all
+2025-10-04T21:27:43.442-0500 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:27:43.443-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:27:43.443-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:27:43.443-0500 [DEBUG] ReferenceTransformer: "var.my-set" references: []
+2025-10-04T21:27:43.443-0500 [DEBUG] ReferenceTransformer: "output.mylist (expand)" references: []
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] AttachDependenciesTransformer: output.mylist (expand) depends on []
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.mylist (expand) - *terraform.nodeExpandOutput
+  root - *terraform.nodeCloseModule
+    output.mylist (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:27:43.443-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:27:43.443-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:27:43.443-0500 [DEBUG] Starting graph walk: walkValidate
+2025-10-04T21:27:43.443-0500 [TRACE] vertex "var.my-set": starting visit (*terraform.NodeRootVariable)
+2025-10-04T21:27:43.443-0500 [TRACE] vertex "var.my-set": belongs to
+2025-10-04T21:27:43.443-0500 [TRACE] NodeRootVariable: evaluating var.my-set
+2025-10-04T21:27:43.443-0500 [TRACE] prepareFinalInputVariableValue: preparing var.my-set
+2025-10-04T21:27:43.443-0500 [TRACE] vertex "var.my-set": visit complete
+2025-10-04T21:27:43.443-0500 [TRACE] vertex "output.mylist (expand)": starting visit (*terraform.nodeExpandOutput)
+2025-10-04T21:27:43.443-0500 [TRACE] vertex "output.mylist (expand)": does not belong to any module instance
+2025-10-04T21:27:43.443-0500 [TRACE] vertex "output.mylist (expand)": expanding dynamic subgraph
+2025-10-04T21:27:43.443-0500 [TRACE] Expanding output: adding output.mylist as *terraform.NodeApplyableOutput
+2025-10-04T21:27:43.443-0500 [TRACE] vertex "output.mylist (expand)": entering dynamic subgraph
+2025-10-04T21:27:43.443-0500 [TRACE] vertex "output.mylist": starting visit (*terraform.NodeApplyableOutput)
+2025-10-04T21:27:43.443-0500 [TRACE] vertex "output.mylist": belongs to
+2025-10-04T21:27:43.444-0500 [ERROR] vertex "output.mylist" error: Reference to undeclared input variable
+2025-10-04T21:27:43.444-0500 [TRACE] vertex "output.mylist": visit complete, with errors
+2025-10-04T21:27:43.444-0500 [TRACE] dag/walk: upstream of "root" errored, so skipping
+2025-10-04T21:27:43.444-0500 [TRACE] vertex "output.mylist (expand)": dynamic subgraph encountered errors: Reference to undeclared input variable
+2025-10-04T21:27:43.444-0500 [ERROR] vertex "output.mylist (expand)" error: Reference to undeclared input variable
+2025-10-04T21:27:43.444-0500 [TRACE] vertex "output.mylist (expand)": visit complete, with errors
+2025-10-04T21:27:43.444-0500 [TRACE] dag/walk: upstream of "root" errored, so skipping
+2025-10-04T21:27:43.444-0500 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2025-10-04T21:27:43.444-0500 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2025-10-04T21:28:04.142-0500 [INFO]  Terraform version: 1.12.2
+2025-10-04T21:28:04.142-0500 [DEBUG] using github.com/hashicorp/go-tfe v1.74.1
+2025-10-04T21:28:04.142-0500 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.1-0.20250203194505-ba0759438da2
+2025-10-04T21:28:04.142-0500 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-10-04T21:28:04.142-0500 [DEBUG] using github.com/zclconf/go-cty v1.16.2
+2025-10-04T21:28:04.142-0500 [INFO]  Go runtime version: go1.24.2
+2025-10-04T21:28:04.142-0500 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-10-04T21:28:04.142-0500 [TRACE] Stdout is a terminal of width 64
+2025-10-04T21:28:04.142-0500 [TRACE] Stderr is a terminal of width 64
+2025-10-04T21:28:04.142-0500 [TRACE] Stdin is a terminal
+2025-10-04T21:28:04.142-0500 [DEBUG] Attempting to open CLI config file: /home/docadmin/.terraformrc
+2025-10-04T21:28:04.142-0500 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-10-04T21:28:04.142-0500 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-10-04T21:28:04.142-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.terraform.d/plugins
+2025-10-04T21:28:04.142-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/terraform/plugins
+2025-10-04T21:28:04.142-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/flatpak/exports/share/terraform/plugins
+2025-10-04T21:28:04.142-0500 [DEBUG] ignoring non-existing provider search directory /var/lib/flatpak/exports/share/terraform/plugins
+2025-10-04T21:28:04.142-0500 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2025-10-04T21:28:04.142-0500 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2025-10-04T21:28:04.143-0500 [INFO]  CLI command args: []string{"plan"}
+2025-10-04T21:28:04.143-0500 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2025-10-04T21:28:04.143-0500 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2025-10-04T21:28:04.143-0500 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2025-10-04T21:28:04.143-0500 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2025-10-04T21:28:04.143-0500 [DEBUG] checking for provisioner in "."
+2025-10-04T21:28:04.147-0500 [DEBUG] checking for provisioner in "/usr/bin"
+2025-10-04T21:28:04.147-0500 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2025-10-04T21:28:04.147-0500 [INFO]  backend/local: starting Plan operation
+2025-10-04T21:28:04.147-0500 [TRACE] backend/local: requesting state manager for workspace "default"
+2025-10-04T21:28:04.147-0500 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2025-10-04T21:28:04.147-0500 [TRACE] backend/local: requesting state lock for workspace "default"
+2025-10-04T21:28:04.147-0500 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2025-10-04T21:28:04.147-0500 [TRACE] statemgr.Filesystem: existing snapshot has lineage "14303325-0ea0-e64e-652f-1531b3044f7a" serial 1
+2025-10-04T21:28:04.147-0500 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2025-10-04T21:28:04.147-0500 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2025-10-04T21:28:04.148-0500 [TRACE] backend/local: reading remote state for workspace "default"
+2025-10-04T21:28:04.148-0500 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2025-10-04T21:28:04.148-0500 [TRACE] statemgr.Filesystem: read snapshot with lineage "14303325-0ea0-e64e-652f-1531b3044f7a" serial 1
+2025-10-04T21:28:04.148-0500 [TRACE] backend/local: populating backendrun.LocalRun for current working directory
+2025-10-04T21:28:04.148-0500 [DEBUG] backend/local: will prompt for input of unset required variables [my-set]
+2025-10-04T21:28:04.148-0500 [DEBUG] command: asking for input: "var.my-set"
+2025-10-04T21:28:12.337-0500 [TRACE] terraform.NewContext: starting
+2025-10-04T21:28:12.337-0500 [TRACE] terraform.NewContext: complete
+2025-10-04T21:28:12.337-0500 [TRACE] backend/local: requesting interactive input, if necessary
+2025-10-04T21:28:12.337-0500 [TRACE] Context.Input: Prompting for provider arguments
+2025-10-04T21:28:12.337-0500 [TRACE] backend/local: running validation operation
+2025-10-04T21:28:12.337-0500 [DEBUG] Building and walking validate graph
+2025-10-04T21:28:12.337-0500 [TRACE] building graph for walkValidate
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:28:12.337-0500 [TRACE] variableValidationTransformer: var.my-set has no validation rules
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] OutputTransformer: adding myset as *terraform.nodeExpandOutput
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.StateTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] StateTransformer: pointless no-op call, creating no nodes at all
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:28:12.337-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.337-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:28:12.337-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:28:12.337-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:28:12.338-0500 [DEBUG] ReferenceTransformer: "var.my-set" references: []
+2025-10-04T21:28:12.338-0500 [DEBUG] ReferenceTransformer: "output.myset (expand)" references: [var.my-set]
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] AttachDependenciesTransformer: output.myset (expand) depends on []
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.338-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:28:12.338-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:28:12.338-0500 [DEBUG] Starting graph walk: walkValidate
+2025-10-04T21:28:12.339-0500 [TRACE] vertex "var.my-set": starting visit (*terraform.NodeRootVariable)
+2025-10-04T21:28:12.339-0500 [TRACE] vertex "var.my-set": belongs to
+2025-10-04T21:28:12.339-0500 [TRACE] NodeRootVariable: evaluating var.my-set
+2025-10-04T21:28:12.339-0500 [TRACE] prepareFinalInputVariableValue: preparing var.my-set
+2025-10-04T21:28:12.339-0500 [TRACE] vertex "var.my-set": visit complete
+2025-10-04T21:28:12.339-0500 [TRACE] vertex "output.myset (expand)": starting visit (*terraform.nodeExpandOutput)
+2025-10-04T21:28:12.339-0500 [TRACE] vertex "output.myset (expand)": does not belong to any module instance
+2025-10-04T21:28:12.339-0500 [TRACE] vertex "output.myset (expand)": expanding dynamic subgraph
+2025-10-04T21:28:12.339-0500 [TRACE] Expanding output: adding output.myset as *terraform.NodeApplyableOutput
+2025-10-04T21:28:12.339-0500 [TRACE] vertex "output.myset (expand)": entering dynamic subgraph
+2025-10-04T21:28:12.339-0500 [TRACE] vertex "output.myset": starting visit (*terraform.NodeApplyableOutput)
+2025-10-04T21:28:12.339-0500 [TRACE] vertex "output.myset": belongs to
+2025-10-04T21:28:12.340-0500 [TRACE] setValue: Saving Create change for output.myset in changeset
+2025-10-04T21:28:12.340-0500 [TRACE] setValue: Saving value for output.myset in state
+2025-10-04T21:28:12.340-0500 [TRACE] vertex "output.myset": visit complete
+2025-10-04T21:28:12.340-0500 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2025-10-04T21:28:12.340-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:28:12.340-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:28:12.340-0500 [TRACE] vertex "output.myset (expand)": dynamic subgraph completed successfully
+2025-10-04T21:28:12.340-0500 [TRACE] vertex "output.myset (expand)": visit complete
+2025-10-04T21:28:12.340-0500 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2025-10-04T21:28:12.340-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:28:12.340-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:28:12.340-0500 [INFO]  backend/local: plan calling Plan
+2025-10-04T21:28:12.340-0500 [DEBUG] Building and walking plan graph for NormalMode
+2025-10-04T21:28:12.340-0500 [TRACE] building graph for walkPlan
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:28:12.340-0500 [TRACE] variableValidationTransformer: var.my-set has no validation rules
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] OutputTransformer: adding myset as *terraform.nodeExpandOutput
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.StateTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:28:12.340-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.340-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:28:12.340-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:28:12.340-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:28:12.341-0500 [DEBUG] ReferenceTransformer: "var.my-set" references: []
+2025-10-04T21:28:12.341-0500 [DEBUG] ReferenceTransformer: "output.myset (expand)" references: [var.my-set]
+2025-10-04T21:28:12.341-0500 [DEBUG] ReferenceTransformer: "output.mylist (destroy)" references: []
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] AttachDependenciesTransformer: output.myset (expand) depends on []
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    output.mylist (destroy) - *terraform.NodeDestroyableOutput
+    output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.341-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:28:12.341-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:28:12.341-0500 [DEBUG] Starting graph walk: walkPlan
+2025-10-04T21:28:12.341-0500 [TRACE] vertex "var.my-set": starting visit (*terraform.NodeRootVariable)
+2025-10-04T21:28:12.341-0500 [TRACE] vertex "var.my-set": belongs to
+2025-10-04T21:28:12.341-0500 [TRACE] vertex "output.mylist (destroy)": starting visit (*terraform.NodeDestroyableOutput)
+2025-10-04T21:28:12.341-0500 [TRACE] vertex "output.mylist (destroy)": does not belong to any module instance
+2025-10-04T21:28:12.341-0500 [TRACE] vertex "output.mylist (destroy)": visit complete
+2025-10-04T21:28:12.341-0500 [TRACE] NodeRootVariable: evaluating var.my-set
+2025-10-04T21:28:12.341-0500 [TRACE] prepareFinalInputVariableValue: preparing var.my-set
+2025-10-04T21:28:12.341-0500 [TRACE] vertex "var.my-set": visit complete
+2025-10-04T21:28:12.341-0500 [TRACE] vertex "output.myset (expand)": starting visit (*terraform.nodeExpandOutput)
+2025-10-04T21:28:12.341-0500 [TRACE] vertex "output.myset (expand)": does not belong to any module instance
+2025-10-04T21:28:12.341-0500 [TRACE] vertex "output.myset (expand)": expanding dynamic subgraph
+2025-10-04T21:28:12.341-0500 [TRACE] Expanding output: adding output.myset as *terraform.NodeApplyableOutput
+2025-10-04T21:28:12.341-0500 [TRACE] vertex "output.myset (expand)": entering dynamic subgraph
+2025-10-04T21:28:12.342-0500 [TRACE] vertex "output.myset": starting visit (*terraform.NodeApplyableOutput)
+2025-10-04T21:28:12.342-0500 [TRACE] vertex "output.myset": belongs to
+2025-10-04T21:28:12.342-0500 [TRACE] setValue: Saving Create change for output.myset in changeset
+2025-10-04T21:28:12.342-0500 [TRACE] setValue: Saving value for output.myset in state
+2025-10-04T21:28:12.342-0500 [TRACE] setValue: Saving value for output.myset in state
+2025-10-04T21:28:12.342-0500 [TRACE] vertex "output.myset": visit complete
+2025-10-04T21:28:12.342-0500 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2025-10-04T21:28:12.342-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:28:12.342-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:28:12.342-0500 [TRACE] vertex "output.myset (expand)": dynamic subgraph completed successfully
+2025-10-04T21:28:12.342-0500 [TRACE] vertex "output.myset (expand)": visit complete
+2025-10-04T21:28:12.342-0500 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2025-10-04T21:28:12.342-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:28:12.342-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:28:12.342-0500 [TRACE] Plan is complete
+2025-10-04T21:28:12.342-0500 [TRACE] Plan is applyable
+2025-10-04T21:28:12.342-0500 [DEBUG] building apply graph to check for errors
+2025-10-04T21:28:12.342-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:28:12.342-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:28:12.342-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:28:12.342-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:28:12.342-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.342-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:28:12.342-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:28:12.342-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:28:12.342-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:28:12.342-0500 [TRACE] variableValidationTransformer: var.my-set has no validation rules
+2025-10-04T21:28:12.342-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] OutputTransformer: adding myset as *terraform.nodeExpandOutput
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.DiffTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.DiffTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.DeferredTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.DeferredTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:28:12.343-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.343-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:28:12.343-0500 [DEBUG] ReferenceTransformer: "var.my-set" references: []
+2025-10-04T21:28:12.343-0500 [DEBUG] ReferenceTransformer: "output.myset (expand)" references: [var.my-set]
+2025-10-04T21:28:12.343-0500 [DEBUG] ReferenceTransformer: "output.mylist (destroy)" references: []
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] AttachDependenciesTransformer: output.myset (expand) depends on []
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.checkStartTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.checkStartTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.CBDEdgeTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.CBDEdgeTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    output.mylist (destroy) - *terraform.NodeDestroyableOutput
+    output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:12.343-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:28:12.343-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:28:12.343-0500 [INFO]  backend/local: plan operation completed
+2025-10-04T21:28:12.344-0500 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2025-10-04T21:28:12.345-0500 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2025-10-04T21:28:19.119-0500 [INFO]  Terraform version: 1.12.2
+2025-10-04T21:28:19.119-0500 [DEBUG] using github.com/hashicorp/go-tfe v1.74.1
+2025-10-04T21:28:19.119-0500 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.1-0.20250203194505-ba0759438da2
+2025-10-04T21:28:19.119-0500 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-10-04T21:28:19.119-0500 [DEBUG] using github.com/zclconf/go-cty v1.16.2
+2025-10-04T21:28:19.119-0500 [INFO]  Go runtime version: go1.24.2
+2025-10-04T21:28:19.119-0500 [INFO]  CLI args: []string{"terraform", "apply", "-auto-approve"}
+2025-10-04T21:28:19.119-0500 [TRACE] Stdout is a terminal of width 64
+2025-10-04T21:28:19.119-0500 [TRACE] Stderr is a terminal of width 64
+2025-10-04T21:28:19.119-0500 [TRACE] Stdin is a terminal
+2025-10-04T21:28:19.119-0500 [DEBUG] Attempting to open CLI config file: /home/docadmin/.terraformrc
+2025-10-04T21:28:19.119-0500 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-10-04T21:28:19.120-0500 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-10-04T21:28:19.120-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.terraform.d/plugins
+2025-10-04T21:28:19.120-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/terraform/plugins
+2025-10-04T21:28:19.120-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/flatpak/exports/share/terraform/plugins
+2025-10-04T21:28:19.120-0500 [DEBUG] ignoring non-existing provider search directory /var/lib/flatpak/exports/share/terraform/plugins
+2025-10-04T21:28:19.120-0500 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2025-10-04T21:28:19.120-0500 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2025-10-04T21:28:19.120-0500 [INFO]  CLI command args: []string{"apply", "-auto-approve"}
+2025-10-04T21:28:19.121-0500 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2025-10-04T21:28:19.121-0500 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2025-10-04T21:28:19.121-0500 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2025-10-04T21:28:19.121-0500 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2025-10-04T21:28:19.121-0500 [DEBUG] checking for provisioner in "."
+2025-10-04T21:28:19.124-0500 [DEBUG] checking for provisioner in "/usr/bin"
+2025-10-04T21:28:19.124-0500 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2025-10-04T21:28:19.124-0500 [INFO]  backend/local: starting Apply operation
+2025-10-04T21:28:19.124-0500 [TRACE] backend/local: requesting state manager for workspace "default"
+2025-10-04T21:28:19.124-0500 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2025-10-04T21:28:19.124-0500 [TRACE] backend/local: requesting state lock for workspace "default"
+2025-10-04T21:28:19.124-0500 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2025-10-04T21:28:19.125-0500 [TRACE] statemgr.Filesystem: existing snapshot has lineage "14303325-0ea0-e64e-652f-1531b3044f7a" serial 1
+2025-10-04T21:28:19.125-0500 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2025-10-04T21:28:19.125-0500 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2025-10-04T21:28:19.125-0500 [TRACE] backend/local: reading remote state for workspace "default"
+2025-10-04T21:28:19.125-0500 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2025-10-04T21:28:19.125-0500 [TRACE] statemgr.Filesystem: read snapshot with lineage "14303325-0ea0-e64e-652f-1531b3044f7a" serial 1
+2025-10-04T21:28:19.125-0500 [TRACE] backend/local: populating backendrun.LocalRun for current working directory
+2025-10-04T21:28:19.125-0500 [DEBUG] backend/local: will prompt for input of unset required variables [my-set]
+2025-10-04T21:28:19.125-0500 [DEBUG] command: asking for input: "var.my-set"
+2025-10-04T21:28:21.953-0500 [TRACE] terraform.NewContext: starting
+2025-10-04T21:28:21.953-0500 [TRACE] terraform.NewContext: complete
+2025-10-04T21:28:21.953-0500 [TRACE] backend/local: requesting interactive input, if necessary
+2025-10-04T21:28:21.953-0500 [TRACE] Context.Input: Prompting for provider arguments
+2025-10-04T21:28:21.953-0500 [TRACE] backend/local: running validation operation
+2025-10-04T21:28:21.954-0500 [DEBUG] Building and walking validate graph
+2025-10-04T21:28:21.954-0500 [TRACE] building graph for walkValidate
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:28:21.954-0500 [TRACE] variableValidationTransformer: var.my-set has no validation rules
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] OutputTransformer: adding myset as *terraform.nodeExpandOutput
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.StateTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] StateTransformer: pointless no-op call, creating no nodes at all
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:28:21.954-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.954-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:28:21.954-0500 [DEBUG] ReferenceTransformer: "var.my-set" references: []
+2025-10-04T21:28:21.954-0500 [DEBUG] ReferenceTransformer: "output.myset (expand)" references: [var.my-set]
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] AttachDependenciesTransformer: output.myset (expand) depends on []
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.954-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:28:21.954-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:28:21.954-0500 [DEBUG] Starting graph walk: walkValidate
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "var.my-set": starting visit (*terraform.NodeRootVariable)
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "var.my-set": belongs to
+2025-10-04T21:28:21.955-0500 [TRACE] NodeRootVariable: evaluating var.my-set
+2025-10-04T21:28:21.955-0500 [TRACE] prepareFinalInputVariableValue: preparing var.my-set
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "var.my-set": visit complete
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "output.myset (expand)": starting visit (*terraform.nodeExpandOutput)
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "output.myset (expand)": does not belong to any module instance
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "output.myset (expand)": expanding dynamic subgraph
+2025-10-04T21:28:21.955-0500 [TRACE] Expanding output: adding output.myset as *terraform.NodeApplyableOutput
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "output.myset (expand)": entering dynamic subgraph
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "output.myset": starting visit (*terraform.NodeApplyableOutput)
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "output.myset": belongs to
+2025-10-04T21:28:21.955-0500 [TRACE] setValue: Saving Create change for output.myset in changeset
+2025-10-04T21:28:21.955-0500 [TRACE] setValue: Saving value for output.myset in state
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "output.myset": visit complete
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "output.myset (expand)": dynamic subgraph completed successfully
+2025-10-04T21:28:21.955-0500 [TRACE] vertex "output.myset (expand)": visit complete
+2025-10-04T21:28:21.956-0500 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2025-10-04T21:28:21.956-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:28:21.956-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:28:21.956-0500 [INFO]  backend/local: apply calling Plan
+2025-10-04T21:28:21.956-0500 [DEBUG] Building and walking plan graph for NormalMode
+2025-10-04T21:28:21.956-0500 [TRACE] building graph for walkPlan
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:28:21.956-0500 [TRACE] variableValidationTransformer: var.my-set has no validation rules
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] OutputTransformer: adding myset as *terraform.nodeExpandOutput
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.StateTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:28:21.956-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.956-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:28:21.956-0500 [DEBUG] ReferenceTransformer: "var.my-set" references: []
+2025-10-04T21:28:21.956-0500 [DEBUG] ReferenceTransformer: "output.myset (expand)" references: [var.my-set]
+2025-10-04T21:28:21.956-0500 [DEBUG] ReferenceTransformer: "output.mylist (destroy)" references: []
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] AttachDependenciesTransformer: output.myset (expand) depends on []
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    output.mylist (destroy) - *terraform.NodeDestroyableOutput
+    output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.956-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:28:21.956-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:28:21.956-0500 [DEBUG] Starting graph walk: walkPlan
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.mylist (destroy)": starting visit (*terraform.NodeDestroyableOutput)
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.mylist (destroy)": does not belong to any module instance
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.mylist (destroy)": visit complete
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "var.my-set": starting visit (*terraform.NodeRootVariable)
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "var.my-set": belongs to
+2025-10-04T21:28:21.957-0500 [TRACE] NodeRootVariable: evaluating var.my-set
+2025-10-04T21:28:21.957-0500 [TRACE] prepareFinalInputVariableValue: preparing var.my-set
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "var.my-set": visit complete
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.myset (expand)": starting visit (*terraform.nodeExpandOutput)
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.myset (expand)": does not belong to any module instance
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.myset (expand)": expanding dynamic subgraph
+2025-10-04T21:28:21.957-0500 [TRACE] Expanding output: adding output.myset as *terraform.NodeApplyableOutput
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.myset (expand)": entering dynamic subgraph
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.myset": starting visit (*terraform.NodeApplyableOutput)
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.myset": belongs to
+2025-10-04T21:28:21.957-0500 [TRACE] setValue: Saving Create change for output.myset in changeset
+2025-10-04T21:28:21.957-0500 [TRACE] setValue: Saving value for output.myset in state
+2025-10-04T21:28:21.957-0500 [TRACE] setValue: Saving value for output.myset in state
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.myset": visit complete
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.myset (expand)": dynamic subgraph completed successfully
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "output.myset (expand)": visit complete
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:28:21.957-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:28:21.957-0500 [TRACE] Plan is complete
+2025-10-04T21:28:21.957-0500 [TRACE] Plan is applyable
+2025-10-04T21:28:21.958-0500 [DEBUG] building apply graph to check for errors
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:28:21.958-0500 [TRACE] variableValidationTransformer: var.my-set has no validation rules
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] OutputTransformer: adding myset as *terraform.nodeExpandOutput
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.DiffTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.DiffTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.DeferredTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.DeferredTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:28:21.958-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.958-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:28:21.958-0500 [DEBUG] ReferenceTransformer: "var.my-set" references: []
+2025-10-04T21:28:21.958-0500 [DEBUG] ReferenceTransformer: "output.myset (expand)" references: [var.my-set]
+2025-10-04T21:28:21.958-0500 [DEBUG] ReferenceTransformer: "output.mylist (destroy)" references: []
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] AttachDependenciesTransformer: output.myset (expand) depends on []
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.checkStartTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.checkStartTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.CBDEdgeTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.CBDEdgeTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    output.mylist (destroy) - *terraform.NodeDestroyableOutput
+    output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.958-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:28:21.958-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [INFO]  backend/local: apply calling Apply
+2025-10-04T21:28:21.959-0500 [DEBUG] Building and walking apply graph for NormalMode plan
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] ConfigTransformer: Starting for path:
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.variableValidationTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes
+2025-10-04T21:28:21.959-0500 [TRACE] variableValidationTransformer: var.my-set has no validation rules
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.variableValidationTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.LocalTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.OutputTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] OutputTransformer: adding myset as *terraform.nodeExpandOutput
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.DiffTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.DiffTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.DeferredTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.DeferredTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.checkTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2025-10-04T21:28:21.959-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.959-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2025-10-04T21:28:21.959-0500 [DEBUG] ReferenceTransformer: "var.my-set" references: []
+2025-10-04T21:28:21.959-0500 [DEBUG] ReferenceTransformer: "output.myset (expand)" references: [var.my-set]
+2025-10-04T21:28:21.959-0500 [DEBUG] ReferenceTransformer: "output.mylist (destroy)" references: []
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] AttachDependenciesTransformer: output.myset (expand) depends on []
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.checkStartTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.checkStartTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.CBDEdgeTransformer
+2025-10-04T21:28:21.959-0500 [TRACE] Completed graph transform *terraform.CBDEdgeTransformer (no changes)
+2025-10-04T21:28:21.959-0500 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2025-10-04T21:28:21.960-0500 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2025-10-04T21:28:21.960-0500 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2025-10-04T21:28:21.960-0500 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2025-10-04T21:28:21.960-0500 [TRACE] Executing graph transform *terraform.ephemeralResourceCloseTransformer
+2025-10-04T21:28:21.960-0500 [TRACE] Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)
+2025-10-04T21:28:21.960-0500 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2025-10-04T21:28:21.960-0500 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2025-10-04T21:28:21.960-0500 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2025-10-04T21:28:21.960-0500 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  output.mylist (destroy) - *terraform.NodeDestroyableOutput
+  output.myset (expand) - *terraform.nodeExpandOutput
+    var.my-set - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    output.mylist (destroy) - *terraform.NodeDestroyableOutput
+    output.myset (expand) - *terraform.nodeExpandOutput
+  var.my-set - *terraform.NodeRootVariable
+  ------
+2025-10-04T21:28:21.960-0500 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2025-10-04T21:28:21.960-0500 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2025-10-04T21:28:21.960-0500 [DEBUG] Starting graph walk: walkApply
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.mylist (destroy)": starting visit (*terraform.NodeDestroyableOutput)
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.mylist (destroy)": does not belong to any module instance
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.mylist (destroy)": visit complete
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "var.my-set": starting visit (*terraform.NodeRootVariable)
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "var.my-set": belongs to
+2025-10-04T21:28:21.960-0500 [TRACE] NodeRootVariable: evaluating var.my-set
+2025-10-04T21:28:21.960-0500 [TRACE] prepareFinalInputVariableValue: preparing var.my-set
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "var.my-set": visit complete
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.myset (expand)": starting visit (*terraform.nodeExpandOutput)
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.myset (expand)": does not belong to any module instance
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.myset (expand)": expanding dynamic subgraph
+2025-10-04T21:28:21.960-0500 [TRACE] Expanding output: adding output.myset as *terraform.NodeApplyableOutput
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.myset (expand)": entering dynamic subgraph
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.myset": starting visit (*terraform.NodeApplyableOutput)
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.myset": belongs to
+2025-10-04T21:28:21.960-0500 [TRACE] setValue: Saving value for output.myset in state
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.myset": visit complete
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.myset (expand)": dynamic subgraph completed successfully
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "output.myset (expand)": visit complete
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "root": does not belong to any module instance
+2025-10-04T21:28:21.960-0500 [TRACE] vertex "root": visit complete
+2025-10-04T21:28:21.960-0500 [TRACE] statemgr.Filesystem: creating backup snapshot at terraform.tfstate.backup
+2025-10-04T21:28:21.961-0500 [TRACE] statemgr.Filesystem: state has changed since last snapshot, so incrementing serial to 2
+2025-10-04T21:28:21.961-0500 [TRACE] statemgr.Filesystem: writing snapshot at terraform.tfstate
+2025-10-04T21:28:21.966-0500 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2025-10-04T21:28:21.966-0500 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2025-10-04T21:28:59.069-0500 [INFO]  Terraform version: 1.12.2
+2025-10-04T21:28:59.070-0500 [DEBUG] using github.com/hashicorp/go-tfe v1.74.1
+2025-10-04T21:28:59.070-0500 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.1-0.20250203194505-ba0759438da2
+2025-10-04T21:28:59.070-0500 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-10-04T21:28:59.070-0500 [DEBUG] using github.com/zclconf/go-cty v1.16.2
+2025-10-04T21:28:59.070-0500 [INFO]  Go runtime version: go1.24.2
+2025-10-04T21:28:59.070-0500 [INFO]  CLI args: []string{"terraform", "destroy", "auto-approve"}
+2025-10-04T21:28:59.070-0500 [TRACE] Stdout is a terminal of width 64
+2025-10-04T21:28:59.070-0500 [TRACE] Stderr is a terminal of width 64
+2025-10-04T21:28:59.070-0500 [TRACE] Stdin is a terminal
+2025-10-04T21:28:59.070-0500 [DEBUG] Attempting to open CLI config file: /home/docadmin/.terraformrc
+2025-10-04T21:28:59.070-0500 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-10-04T21:28:59.070-0500 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-10-04T21:28:59.070-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.terraform.d/plugins
+2025-10-04T21:28:59.070-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/terraform/plugins
+2025-10-04T21:28:59.070-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/flatpak/exports/share/terraform/plugins
+2025-10-04T21:28:59.070-0500 [DEBUG] ignoring non-existing provider search directory /var/lib/flatpak/exports/share/terraform/plugins
+2025-10-04T21:28:59.070-0500 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2025-10-04T21:28:59.070-0500 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2025-10-04T21:28:59.070-0500 [INFO]  CLI command args: []string{"destroy", "auto-approve"}
+2025-10-04T21:29:12.924-0500 [INFO]  Terraform version: 1.12.2
+2025-10-04T21:29:12.924-0500 [DEBUG] using github.com/hashicorp/go-tfe v1.74.1
+2025-10-04T21:29:12.924-0500 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.1-0.20250203194505-ba0759438da2
+2025-10-04T21:29:12.924-0500 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-10-04T21:29:12.924-0500 [DEBUG] using github.com/zclconf/go-cty v1.16.2
+2025-10-04T21:29:12.924-0500 [INFO]  Go runtime version: go1.24.2
+2025-10-04T21:29:12.924-0500 [INFO]  CLI args: []string{"terraform", "destroy"}
+2025-10-04T21:29:12.924-0500 [TRACE] Stdout is a terminal of width 64
+2025-10-04T21:29:12.924-0500 [TRACE] Stderr is a terminal of width 64
+2025-10-04T21:29:12.924-0500 [TRACE] Stdin is a terminal
+2025-10-04T21:29:12.924-0500 [DEBUG] Attempting to open CLI config file: /home/docadmin/.terraformrc
+2025-10-04T21:29:12.924-0500 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-10-04T21:29:12.925-0500 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-10-04T21:29:12.925-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.terraform.d/plugins
+2025-10-04T21:29:12.925-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/terraform/plugins
+2025-10-04T21:29:12.925-0500 [DEBUG] ignoring non-existing provider search directory /home/docadmin/.local/share/flatpak/exports/share/terraform/plugins
+2025-10-04T21:29:12.925-0500 [DEBUG] ignoring non-existing provider search directory /var/lib/flatpak/exports/share/terraform/plugins
+2025-10-04T21:29:12.925-0500 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2025-10-04T21:29:12.925-0500 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2025-10-04T21:29:12.925-0500 [INFO]  CLI command args: []string{"destroy"}
+2025-10-04T21:29:12.926-0500 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2025-10-04T21:29:12.926-0500 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2025-10-04T21:29:12.926-0500 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2025-10-04T21:29:12.926-0500 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2025-10-04T21:29:12.926-0500 [DEBUG] checking for provisioner in "."
+2025-10-04T21:29:12.947-0500 [DEBUG] checking for provisioner in "/usr/bin"
+2025-10-04T21:29:12.947-0500 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2025-10-04T21:29:12.948-0500 [INFO]  backend/local: starting Apply operation
+2025-10-04T21:29:12.948-0500 [TRACE] backend/local: requesting state manager for workspace "default"
+2025-10-04T21:29:12.948-0500 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2025-10-04T21:29:12.948-0500 [TRACE] backend/local: requesting state lock for workspace "default"
+2025-10-04T21:29:12.948-0500 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2025-10-04T21:29:12.948-0500 [TRACE] statemgr.Filesystem: existing snapshot has lineage "14303325-0ea0-e64e-652f-1531b3044f7a" serial 2
+2025-10-04T21:29:12.948-0500 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2025-10-04T21:29:12.949-0500 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2025-10-04T21:29:12.949-0500 [TRACE] backend/local: reading remote state for workspace "default"
+2025-10-04T21:29:12.949-0500 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2025-10-04T21:29:12.949-0500 [TRACE] statemgr.Filesystem: read snapshot with lineage "14303325-0ea0-e64e-652f-1531b3044f7a" serial 2
+2025-10-04T21:29:12.949-0500 [TRACE] backend/local: populating backendrun.LocalRun for current working directory
+2025-10-04T21:29:12.949-0500 [DEBUG] backend/local: will prompt for input of unset required variables [my-set]
+2025-10-04T21:29:12.949-0500 [DEBUG] command: asking for input: "var.my-set"
+2025-10-04T21:29:14.170-0500 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2025-10-04T21:29:14.170-0500 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
