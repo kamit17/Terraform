@@ -53,3 +53,27 @@ resource "aws_instance" "example" {
     Name = "terraform-learn-state-ec2"
   }
 }
+
+/*removed {
+  from = aws_instance.example_new
+
+  lifecycle {
+    destroy = false
+  }
+}*/
+resource "aws_instance" "example_new" {
+  ami                    = data.aws_ami.ubuntu.id
+  instance_type          = "t2.micro"
+  vpc_security_group_ids = [aws_security_group.sg_8080.id]
+  user_data              = <<-EOF
+              #!/bin/bash
+              apt-get update
+              apt-get install -y apache2
+              sed -i -e 's/80/8080/' /etc/apache2/ports.conf
+              echo "Hello World" > /var/www/html/index.html
+              systemctl restart apache2
+              EOF
+  tags = {
+    Name = "terraform-learn-state-ec2"
+  }
+}
